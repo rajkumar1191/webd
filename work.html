@@ -1,0 +1,248 @@
+<!-- <!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Web Development</title>
+    <meta name="" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito&family=Poppins:ital,wght@0,100;1,300&family=Roboto&family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, orange, green);
+        opacity: 1;
+      }
+      .card {
+        width: 32.5%;
+        display: flex;
+        margin: 5px;
+        flex-direction: column;
+        position: relative;
+        max-width: 350px;
+      }
+      .card img {
+        width: 100%;
+      }
+
+      .card div {
+        position: absolute;
+        width: 100%;
+        background: #674f9f;
+        padding: 20px 0;
+        bottom: 0;
+        text-align: center;
+        font-size: 2.2rem;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+        />
+        <div>Website Desgin</div>
+      </div>
+      <div class="card">
+        <img
+          src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+        />
+        <div>Website Desgin</div>
+      </div>
+      <div class="card">
+        <img
+          src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+        />
+        <div>Website Desgin</div>
+      </div>
+      <div class="card">
+        <img
+          src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+        />
+        <div>Website Desgin</div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+
+</head>
+<style>
+    
+    nav{
+        background-color: #b9b5b5;
+        height: 150px;
+       
+        /* height: 70px; */
+    /* position: relative; */
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column; */
+    }
+    .iconbar {
+        /* flex: 2; */
+        display: inline-block;
+        /* background-color: blueviolet; */
+        /* justify-content: right; */
+        /* object-fit: cover; */
+       /* padding: 400px;
+        /* padding-bottom: 0%; */
+        padding-left: 30%; 
+       
+    }
+    .logo{
+        display: inline-block;
+        /* background-color: blue; */
+        
+    }
+    .logo1{
+        /* flex: 1; */
+        width:auto;
+        height: auto;
+        min-height: 100%;
+        padding:20px;     
+        }
+
+       h1{
+            font-size: 3.75rem; 
+            line-height: 1.1;
+            font-weight: bolder;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+        }
+        h2{
+            text-align: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+        }
+       
+.container{
+       /* margin: 0; */
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 20px ;
+    background-color: rgb(222, 124, 217);
+    place-items: center;
+    
+}
+.gridimage{
+    position: relative;
+    display:grid;
+
+    /* min-width: fit-content; */
+    /* min-height: fit-content; */
+    /* background-color: aqua; */
+    /* border-width: 2px;   */
+    }
+.images{
+    max-width :400px;
+    max-height: 400px;
+    /* object-fit: contain; */
+    /* padding: 20px; */
+    /* border-color: black;  */
+    /* /* border-style: solid;
+    background-color: aqua; */
+}
+
+
+
+.textblock{
+   bottom:0;
+    position: absolute;
+    display:inline;
+    width:100%;
+    opacity:0.7;
+
+}
+.textblock h3{
+   font-size: 24px;
+   font-weight: bold;
+   padding: 20px  0px;
+   background-color: #674f9f;
+   color: rgb(217, 211, 211);
+   /* border: 2px; */
+   /* border-style: ridge; */
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+
+</style>
+<body>
+    <nav>
+        <div class="navbar">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<div class="logo">
+    <img class=" logo1" src="./images/logo-w.png">
+</div>
+<div class="iconbar">
+  <a href="#"><img src="./images/responsive-desktop.png"></img></a>
+  <a href="#"><img src="./images/responsive-laptop.png "></img></a>
+  <a href="#"><img src="./images/responsive-tablet.png"></img></a>
+  <a href="#"><img src="./images/responsive-phone-horizontal.png"></img></a>
+  <a href="#"><img src="./images/responsive-phone.png"></img></a>
+</div>
+</div>
+</nav>
+<section>
+   <h1> OUR WORKS </h1>
+ <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui est nemo similique magnam itaque reiciendis, ipsa sint blanditiis dolores totam. Inventore neque est quod autem officia nesciunt culpa eaque corrupti itaque nostrum? Autem, reiciendis deleniti, a aliquam repellat expedita quas asperiores eaque quos repellendus eveniet adipisci minus libero atque totam blanditiis in minima odio harum numquam nesciunt optio impedit? Veritatis distinctio recusandae officia adipisci autem nesciunt, facere dolorem aspernatur obcaecati a laboriosam culpa deserunt esse, iste, eius voluptatem numquam voluptates corrupti facilis libero perspiciatis blanditiis! Aliquid, minus, adipisci doloremque temporibus voluptatem odit unde, ipsum beatae neque magni porro sapiente.</h2>
+</section>
+<article>
+    <div class="container">
+        <div class="gridimage">
+            <img class=images src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg" alt="web design"/>
+           <div class="textblock">
+            <h3> Web Design</h3>
+       </div>
+    </div>
+        <div class="gridimage">
+              <img class=images src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg" alt="mobile application"/>
+              <div class="textblock">
+              <h3> Mobile Application</h3>
+            </div>
+        </div>
+ 
+        <div class="gridimage">
+                <img class=images src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg" alt="corporate design"/>
+                <div class="textblock">
+                <h3> Corporate Design</h3>
+            </div>
+        </div>
+       <div class="gridimage">
+                 <img class=images src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg" alt="mobile application1"/>
+                 <div class="textblock">
+                 <h3> Mobile Application1</h3>
+                </div>
+            </div>
+            
+        <div class="gridimage">
+                <img class=images src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg" alt="Digital product"/>
+                <div class="textblock">
+                <h3> Digital Product</h3>
+            </div>
+        </div>
+        <div class="gridimage">
+                 <img class=images src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg" alt="Responsive design"/>
+                 <div class="textblock">
+                 <h3>Responsive Design</h3>
+                </div>
+            </div>
+    </div>
+</article>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 
+
+        child selector
+        descendant selector
+        adjacent sibiling
+        general sibiling
+
+     -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .gridimage {
+        /*width: 48%;*/
+        z-index: 0;
+        position: relative;
+      }
+      .images {
+        width: 100%;
+      }
+      .transisCls{
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 10px;
+        transition: width 2s, height 2s;
+        transition-delay: 0.5s;
+        transition-timing-function: ease;
+      }
+
+      .transisCls:hover{
+        width: 400px;
+        height: 400px;
+      }
+
+      .maskCls{
+        -webkit-mask-image: url('https://beenovus.com/assets/img/about.jpg');
+        mask-image: url('https://beenovus.com/assets/img/about.jpg');
+        mask-repeat: no-repeat;
+      }
+      .img{
+        width: 300px;
+        height: 200px;
+      }
+
+      .textblock h3{
+        color: blue;
+      }
+
+      div > div{
+        width: 100px;
+      }
+      div + p{
+        background: #272727;
+      }
+
+      div ~ p{
+        color: orange;
+      }
+
+      .textblock{
+        display: none;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="transisCls">
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training
+    </div>
+  </div>
+
+    <div class="maskCls">
+        <img
+          class="img"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="web design"
+        />
+    </div>
+    <div class="gridimage">
+        <p>z-index</p>
+        <p>z-index1</p>
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="web design"
+        />
+        <div class="textblock">
+          <h3>Web Design</h3>
+        </div>
+      </div>
+      <p>z-index1</p>
+      <p>z-index1</p>
+      <p>z-index1</p>
+
+    <div class="container">
+      <div class="gridimage" style="order: 2; flex-grow: 0">
+        <div style="position: absolute; top:0">z-index</div>
+        <div style="position: absolute; top:0">z-index1</div>
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="web design"
+        />
+        <div class="textblock">
+          <h3>Web Design</h3>
+        </div>
+      </div>
+      <div class="gridimage" style="order: 1; flex-grow: 5">
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="mobile application"
+        />
+        <div class="textblock">
+          <h3>Mobile Application</h3>
+        </div>
+      </div>
+
+      <div class="gridimage" style="order: 4; flex-grow: 1; flex-shrink: 0">
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="corporate design"
+        />
+        <div class="textblock">
+          <h3>Corporate Design</h3>
+        </div>
+      </div>
+      <div class="gridimage" style="order: 3; flex-grow: 1; flex-basis: 300px; flex: 0 0 100px">
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="mobile application1"
+        />
+        <div class="textblock">
+          <h3>Mobile Application1</h3>
+        </div>
+      </div>
+
+      <div class="gridimage" style="order: 6; flex-grow: 1">
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="Digital product"
+        />
+        <div class="textblock">
+          <h3>Digital Product</h3>
+        </div>
+      </div>
+      <div class="gridimage" style="order: 5; flex-grow: 1">
+        <img
+          class="images"
+          src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8c593f782d1654b09c0aa7b3/jhjh688.jpg"
+          alt="Responsive design"
+        />
+        <div class="textblock">
+          <h3>Responsive Design</h3>
+        </div>
+      </div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>

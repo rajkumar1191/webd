@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Web Development</title>
+    <!-- meta data, title, style, script -->
+    <!-- SEO - Search Engine Optimization - Keywords -->
+    <!-- id, class, title, type, name, value, content, src, href -->
+    <meta name="" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Inline, Internal and External -->
+    <!-- Inline -> HTML tag style attribute -->
+    <!--  -->
+
+    <!-- 
+      static
+      dynamic
+      interactive
+      cms
+      ecommerce
+     -->
+
+    <!-- header, footer, audio, video -->
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="index1.css" />
+
+    <!-- CSS - Cascading style sheet -->
+    <!-- 
+      Inline - style attribute in html tag
+      Internal
+      External
+     -->
+
+    <!-- Selectors
+      class -> .className
+      id -> #idName
+      group -> tagName
+      universal -> *
+    -->
+
+    <!-- Box Model -->
+
+    <!-- backgroud -> image,color -->
+    <style>
+      .bgColor {
+        color: cyan;
+        background-color: aquamarine;
+        background-image: url("./cars.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background: url("./cars.jpg") repeat center;
+        background-size: cover;
+      }
+
+      #idCls {
+        color: blue;
+      }
+
+      p {
+        color: brown;
+
+        padding-top: 25px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+
+        padding: 25px 50px 25px 50px;
+        padding: 25px 50px 25px;
+        padding: 25px 50px;
+        padding: 25px;
+
+        margin-top: 25px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        margin-left: 50px;
+
+        margin: 25px 50px 25px 50px;
+        margin: 25px 50px 25px;
+        margin: 25px 50px;
+        margin: 25px;
+
+        border-width: 3px;
+        border-style: solid;
+        border-color: violet;
+
+        border: 3px solid pink;
+
+        border-left: 3px solid black;
+        border-right: 3px solid brown;
+        border-top: 3px dashed black;
+        border-bottom: 3px dotted black;
+
+        outline-width: 3px;
+        outline-style: solid;
+        outline-color: violet;
+
+        outline: 3px solid pink;
+
+        outline-offset: 2px;
+
+        border-radius: 15px;
+        text-align: justify;
+        text-align-last: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-indent: 30px;
+        direction: ltr;
+        unicode-bidi: bidi-override;
+        letter-spacing: 10px;
+        word-spacing: 20px;
+        line-height: 1;
+        text-shadow: 2px 2px 3px #000;
+        box-shadow: 2px 2px 3px #000;
+        position: static;
+      }
+
+      * {
+        color: #000;
+      }
+
+      .imgCls {
+        padding: 25px;
+        width: 100%;
+        min-width: 400px;
+        max-width: 700px;
+        height: 100%;
+        min-height: 200px;
+        max-height: 800px;
+      }
+
+      ul {
+        list-style-type: circle;
+        list-style-type: square;
+      }
+
+      ol {
+        list-style-type: upper-roman;
+      }
+      /* link, visited, hover, active */
+      a {
+        color: chocolate;
+      }
+      a:link {
+        color: chartreuse;
+      }
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        color: crimson;
+      }
+      a:active {
+        color: blueviolet;
+      }
+
+      p:first-child{
+        font-size: 32px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid;
+        padding: 10px;
+        color: aliceblue;
+      }
+
+      td {
+        height: 100px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #000;
+      }
+
+      .stickyCls {
+        position: sticky;
+        top: 0;
+        background: coral;
+        color: #000;
+        padding: 20px;
+        display: flex;
+      }
+
+      .flexCls {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .flexCls p {
+        width: 300px;
+        box-shadow: none;
+        text-shadow: none;
+        color: black;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script></script>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        background: brown;
+        height: 100px;
+        margin-top: 10px;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          background: orange;
+          width: 100%;
+          height: 100px;
+          top: 10px;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          background: yellow;
+          width: 100%;
+          height: 100px;
+          top: 40px;
+        "
+      ></div>
+    </div>
+    <div
+      style="
+        position: relative;
+        background: pink;
+        height: 100px;
+        margin-top: 10px;
+      "
+    >
+      ABC 2
+    </div>
+
+    <div
+      style="
+        position: absolute;
+        background: #000;
+        width: 100%;
+        top: 0;
+        color: #fff;
+      "
+    >
+      Absolute
+    </div>
+    <div style="position: absolute; background: #fff; width: 100%; top: 10px">
+      Absolute
+    </div>
+
+    <div style="position: fixed; background: cyan; top: 90px; right: 30px">
+      Fixed Div
+    </div>
+
+    <div>
+      <div class="stickyCls">Our hands-on training courses are designed</div>
+      <div class="flexCls">
+        <p>
+          Our hands-on training courses are designed to simulate the work
+          environment as closely as possible.
+        </p>
+        <p>
+          Our hands-on training courses are designed to simulate the work
+          environment as closely as possible.
+        </p>
+        <p>
+          Our hands-on training courses are designed to simulate the work
+          environment as closely as possible.
+        </p>
+        <p>
+          Our hands-on training courses are designed to simulate the work
+          environment as closely as possible.
+        </p>
+      </div>
+    </div>
+
+    <header>
+      <!-- Navition  -->
+    </header>
+    <main>
+      <!-- h1, h6 -->
+      <h1 style="color: aqua">Web Development</h1>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible. Our trainers provide guidance and
+        support throughout the training, ensuring that students are able to
+        fully understand and apply the skills they've learned. Our
+        <b>hands-on training</b> courses are designed to simulate the work
+        environment as closely as possible. Our
+        <strong>trainers</strong> provide guidance and support throughout the
+        training, ensuring that students are able to fully understand and apply
+        the skills they've learned.
+      </p>
+      <h2>Courses</h2>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible. Our trainers provide guidance and
+        support throughout the training, ensuring that students are able to
+        fully understand and apply the skills they've learned. Our
+        <i>hands-on training</i> courses are designed to simulate the work
+        environment as closely as possible. Our <u>trainers</u> provide guidance
+        and support throughout the training, ensuring that students are able to
+        fully understand and apply the skills they've learned.
+      </p>
+      <h3 class="fontColor">HTML</h3>
+      <p class="fontColor">
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible. Our trainers provide guidance and
+        support throughout the training, ensuring that students are able to
+        fully understand and apply the skills they've learned. Our
+        <em>hands-on training</em> courses are designed to simulate the work
+        environment as closely as possible. Our <mark>trainers</mark> provide
+        guidance and support throughout the training, ensuring that students are
+        able to fully understand and apply the skills they've learned.
+      </p>
+      <div class="bgColor">
+        <h4 id="idCls">CSS</h4>
+        <p>
+          Our hands-on training courses are designed to simulate the work
+          environment as closely as possible. Our trainers provide guidance and
+          support throughout the training, ensuring that students are able to
+          fully understand and apply the skills they've learned. Our
+          <small>hands-on training</small> courses are designed to simulate the
+          work environment as closely as possible. Our
+          <strike>trainers</strike> provide guidance and support throughout the
+          training, ensuring that <sup>students</sup> are able to fully
+          understand and apply the skills they've <sub>learned</sub>.
+        </p>
+      </div>
+      <h5 id="idCls1">JavaScript</h5>
+      <h6>Angular/React</h6>
+
+      <!-- b - bold, strong, i, em, mark, small, strike, u, ins, sub, sup -->
+
+      <!-- Link - a - href- hyper reference -->
+      <a href="./about/about1/about.html" target="_blank">About</a>
+
+      <img
+        class="img-thumbnail"
+        src="./images/cars.jpg"
+        alt="Cars"
+        style="    width: 150px;
+        height: 150px;
+        border-radius: 50%;"
+      />
+      <img
+        src="https://beenovus.com/assets/img/bg.jpg"
+        width="300px"
+        height="300px"
+      />
+
+      <!-- ol - ordered list, ul - unordered list, li - list -->
+      <ol>
+        <li>Title</li>
+        <li>Title</li>
+        <li>Title</li>
+      </ol>
+      <ul>
+        <li>Title</li>
+        <li>Title</li>
+        <li>Title</li>
+      </ul>
+
+      <!-- Definition List dl - definition list, dt, dd - definition data -->
+
+      <dl>
+        <dt>Fruits</dt>
+        <dd>Orange</dd>
+        <dd>Apple</dd>
+      </dl>
+
+      <!-- Tables -> table, thead - table head, tbody - table body, tr - table row, th - table header, td - table data -->
+      <table class="table">
+        <thead>
+          <tr class="table-primary">
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>Tutor</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>ABC</td>
+                    <td>Tutor</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td>150</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <img
+                src="./images/cars.jpg"
+                alt="Cars"
+                width="300px"
+                height="300px"
+              />
+            </td>
+            <td>Tutor</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ABC</td>
+            <td>Tutor</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td colspan="3">Grand Total</td>
+            <td>150</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section/container tags -> header, footer, main, article, section, div and span  -->
+      <!-- block and inline element -->
+
+      <div>Welcome</div>
+      <div>Welcome</div>
+      <span>Welcome</span>
+      <span>Welcome</span>
+
+      <!-- Semantic and non-semantic -->
+
+      <!-- video and audio -->
+
+      <video controls muted autoplay width="300px" height="200px">
+        <source
+          src="https://www.statuslagao.com/whatsapp/videos/friend/friendship-video-status-094.mp4"
+        />
+      </video>
+
+      <audio controls>
+        <source
+          src="https://mp3ringtonesdownload.net/wp-content/uploads/2023/04/3dukki-tikki-hunar-sidhu-_-new-punjabi-song-ringtone-2023-_.mp3"
+        />
+      </audio>
+
+      <!-- <iframe src="https://beenovus.com/"></iframe> -->
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/4LrgFXXI-Ss"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <form method="post/get" action="" onsubmit="">
+        <label>Title of input</label><br />
+        <input type="text" class="form-control" placeholder="Enter you name" name="" id="" value="" /><br />
+        <input type="number" class="form-control" placeholder="Enter you name" /><br />
+        <input type="password" placeholder="Enter you name" /><br />
+        <input type="date" placeholder="Enter you name" /><br />
+        <input type="time" placeholder="Enter you name" /><br />
+        <input type="checkbox" placeholder="Enter you name" /> HTML
+        <input type="checkbox" placeholder="Enter you name" /> CSS
+        <input type="checkbox" placeholder="Enter you name" /> JS <br />
+        <input type="time" placeholder="Enter you name" /> JS <br />
+        <input type="radio" placeholder="Enter you name" name="course" /> HTML
+        <input type="radio" placeholder="Enter you name" name="course" /> CSS
+        <input type="radio" placeholder="Enter you name" name="course" /> JS
+
+        <br />
+
+        <select>
+          <option>--Select--</option>
+          <option>India</option>
+          <option>US</option>
+          <option>China</option>
+        </select>
+
+        <select multiple>
+          <option>--Select--</option>
+          <option>India</option>
+          <option>US</option>
+          <option>China</option>
+        </select>
+        <textarea rows="6" cols="100"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- SVG - Scalable Vector Graphics -->
+
+      <svg width="100" height="300">
+        <rect width="90" height="50" style="fill: #000" />
+      </svg>
+
+      <canvas id="canvasTag"></canvas>
+    </main>
+    <footer></footer>
+
+    <script>
+      var canvas = document.getElementById("canvasTag");
+      var context = canvas.getContext("2d");
+      context.moveTo(0, 0);
+      context.lineTo(200, 10);
+      context.stroke();
+
+      localStorage.setItem('course', 'Frontend')
+      console.log(localStorage.getItem('course'))
+      localStorage.removeItem('course');
+      localStorage.clear()
+
+      sessionStorage.setItem('sessioncourse', 'Frontend')
+      console.log(sessionStorage.getItem('sessioncourse'))
+      sessionStorage.removeItem('sessioncourse');
+      sessionStorage.clear()
+
+    </script>
+  </body>
+</html>

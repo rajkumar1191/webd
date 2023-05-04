@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+  <!-- br, img, div, hr -->
+  <!-- head, body, header, footer, table -->
+  <!-- meta - SEO - Search Engine Optimization - keyword -->
+  <head>
+    <meta name="keywords" content="cake shop near me, " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .flexCls {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .flexCls p {
+        border: 1px solid #000;
+        width: 24%;
+        margin: 5px;
+        border-radius: 10px !important;
+      }
+      a:link {
+        color: chartreuse;
+      }
+      a:visited {
+        color: black;
+      }
+      .flexCls p:hover {
+        color: crimson;
+      }
+      a:active {
+        color: blueviolet;
+      }
+      p:first-child {
+        font-size: 32px;
+      }
+
+      p:first-of-type {
+        font-size: 12px;
+      }
+
+      p:last-child {
+        color: green;
+      }
+
+      p:last-of-type {
+        background: orange;
+      }
+
+      p::first-letter {
+        font-weight: bold;
+        font-size: 60px;
+      }
+
+      p::first-line {
+        font-weight: bold;
+        font-size: 60px;
+      }
+
+      ::marker {
+        color: red;
+      }
+
+      @keyframes bounceInn {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        30% {
+          transform: scale(1.4);
+          opacity: 1;
+        }
+        60% {
+          transform: scale(0.4);
+          opacity: 0.5;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      div {
+        animation-duration: 2s;
+        animation-name: bounceInn;
+
+        animation: bounceInn 2s;
+        animation-iteration-count: 1;
+      }
+      .ani1 {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        animation: easyMove 5s infinite;
+        animation-timing-function: linear;
+        position: relative;
+      }
+
+      .ani {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        position: relative;
+        /*transform: translateY(50px);*/
+        transform: rotateY(180deg);
+      }
+
+      @keyframes easyMove1 {
+        from {
+          top: 1px;
+        }
+        to {
+          top: 500px;
+        }
+      }
+
+      @media screen and (max-width: 425px) {
+        .flexCls p {
+          border: 1px solid #000;
+          width: 100%;
+          margin: 5px;
+          border-radius: 10px !important;
+        }
+
+        p:first-child {
+          font-size: 22px;
+        }
+      }
+
+      @media screen and (min-width: 425px) and (max-width: 768px) {
+        .flexCls p {
+          border: 1px solid #000;
+          width: 45%;
+          margin: 5px;
+          border-radius: 10px !important;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .flexCls p {
+          border: 1px solid #000;
+          width: 30%;
+          margin: 5px;
+          border-radius: 10px !important;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .flexCls p {
+          border: 1px solid #000;
+          width: 24%;
+          margin: 5px;
+          border-radius: 10px !important;
+        }
+      }
+    </style>
+    <!-- keyframes - stages, animation properties - how to animate -->
+  </head>
+
+  <body>
+    <span class="ani">
+      Our hands-on training courses are designed to simulate the work
+      environment as closely as possible.Our hands-on training courses are
+      designed to simulate the work environment as closely as possible.Our
+      hands-on training
+    </span>
+    <span class="ani1">
+      Our hands-on training courses are designed to simulate the work
+      environment as closely as possible.Our hands-on training courses are
+      designed to simulate the work environment as closely as possible.Our
+      hands-on training
+    </span>
+    <div class="flexCls">
+      <p style="border-radius: 5px">
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+    </div>
+
+    <ol>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ol>
+
+    <div class="flexCls">
+      <p style="border-radius: 5px">
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+      <p>
+        Our hands-on training courses are designed to simulate the work
+        environment as closely as possible.Our hands-on training courses are
+        designed to simulate the work environment as closely as possible.Our
+        hands-on training courses are designed to simulate the work environment
+        as closely as possible.
+      </p>
+    </div>
+  </body>
+</html>
