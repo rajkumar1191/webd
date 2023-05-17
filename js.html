@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+
+        
+      <form method="post/get" action="" onsubmit="funName()">
+        <label>Title of input</label><br />
+        <input type="text" class="form-control" onchange="onChangeHandler(event)" onblur="onBlurHandler()" placeholder="Enter you name" name="" id="" value="" /><br />
+        <input type="number" class="form-control" placeholder="Enter you name" /><br />
+        <input type="password" placeholder="Enter you name" /><br />
+        <input type="date" placeholder="Enter you name" /><br />
+        <input type="time" placeholder="Enter you name" /><br />
+        <input type="checkbox" placeholder="Enter you name" /> HTML
+        <input type="checkbox" placeholder="Enter you name" /> CSS
+        <input type="checkbox" placeholder="Enter you name" /> JS <br />
+        <input type="time" placeholder="Enter you name" /> JS <br />
+        <input type="radio" placeholder="Enter you name" name="course" /> HTML
+        <input type="radio" placeholder="Enter you name" name="course" /> CSS
+        <input type="radio" placeholder="Enter you name" name="course" /> JS
+
+        <br />
+
+        <select>
+          <option>--Select--</option>
+          <option>India</option>
+          <option>US</option>
+          <option>China</option>
+        </select>
+
+        <select multiple>
+          <option>--Select--</option>
+          <option>India</option>
+          <option>US</option>
+          <option>China</option>
+        </select>
+        <textarea rows="6" cols="100"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <button onclick="printHandler()">Print Page</button>
+
+      <script>
+        function funName(){
+            
+            console.log('form clicked');
+
+            var formData = confirm("Do you want to submit?")
+
+            if(formData){
+                console.log('submitted')
+            } else {
+                console.log('not submitted')
+            }
+
+            event.preventDefault()
+        }
+        function onChangeHandler(event){
+            console.log('change', event.target.value);
+            alert(event.target.value);
+            event.preventDefault()
+        }
+        function onBlurHandler(){
+            var formData = prompt("Please Enter Your Name:")
+            console.log(formData);
+
+            event.preventDefault()
+        }
+        function onKeyDownHandler(){
+            console.log('key down');
+            event.preventDefault()
+        }
+        function onKeyPressHandler(){
+            console.log('key press');
+            event.preventDefault()
+        }
+        function onKeyUpHandler(){
+            console.log('key up');
+            event.preventDefault()
+        }
+        
+        function printHandler(){
+            window.print();
+        }
+      </script>
+
+    </body>
+</html>
